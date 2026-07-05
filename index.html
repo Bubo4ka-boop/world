@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Wordle</h1>
+            <p>Guess the 5-letter word in 5 tries.</p>
+        </header>
+
+        <section class="game-board">
+            <div class="row" data-row="0">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+            </div>
+            <div class="row" data-row="1">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+            </div>
+            <div class="row" data-row="2">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+            </div>
+            <div class="row" data-row="3">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+            </div>
+            <div class="row" data-row="4">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+                <input class="tile" maxlength="1" autocomplete="off" inputmode="text">
+            </div>
+        </section>
+
+        <div class="controls">
+            <button id="submitBtn">Submit</button>
+            <p id="statusMessage"></p>
+        </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
