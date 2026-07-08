@@ -1,5 +1,6 @@
 const SECRET_WORD = 'funko';
 const MAX_ATTEMPTS = 5;
+const REDIRECT_URL = 'https://www.figma.com/proto/zNzlo8Atvtc1paYrH9IKFs/Welcome-to-the-best-birthday-ever?node-id=105-287&t=5iHwWu4qdioQOS82-0&scaling=min-zoom&content-scaling=fixed&page-id=105%3A286';
 
 const rows = Array.from(document.querySelectorAll('.row'));
 const submitBtn = document.getElementById('submitBtn');
@@ -82,8 +83,13 @@ const checkCurrentRow = () => {
     disableRow(row);
 
     if (guess === SECRET_WORD) {
-        setStatus('Correct! You guessed the word.');
         submitBtn.disabled = true;
+        const confirmed = window.confirm('You guessed correctly! Do you want to continue to the surprise?');
+        if (confirmed) {
+            window.location.href = REDIRECT_URL;
+        } else {
+            setStatus('You guessed correctly!');
+        }
         return;
     }
 
